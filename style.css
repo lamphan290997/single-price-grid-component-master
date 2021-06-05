@@ -1,0 +1,120 @@
+/* reset css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* reset css */
+
+#main{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: hsl(204, 43%, 93%) 10px 10px 80px;
+    margin: 20% 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main .title, 
+#card .content{
+    margin: 40px 35px;
+}
+
+#main .title h2{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+#main .title h4{
+    margin-top: 30px;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+#main .title p{
+    margin-top: 20px;
+    color: hsl(218, 22%, 67%);
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    color: hsl(204, 43%, 93%);
+}
+
+#card .first{
+    width: 100%;
+    background-color: hsl(179, 62%, 43%);
+}
+
+#card .first h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#card .first span{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#card .first p{
+    margin-bottom: 25px;
+}
+
+#card .first .sign-up{
+    text-align: center;
+    padding: 15px 80px;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: hsl(218, 22%, 67%) 2px 2px 15px;
+    border-radius: 7px;
+}
+
+#card .second{
+    width: 100%;
+    background-color: hsl(179, 66%, 55%);
+    box-shadow: hsl(204, 43%, 93%) 0px 1px 1px;
+}
+
+#card .second h4{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#card .second p{
+    color: hsl(204, 43%, 93%);
+    width: 75%;
+}
+
+/* mobile */
+@media only screen and (min-device-width : 375px) and (max-device-width : 740px) {
+    
+#main{
+    margin: 10%;
+    box-shadow: hsl(204, 43%, 93%) -10px -10px 15px;
+}
+
+#main .title, 
+#card .content{
+    margin: 20px 20px;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+}
+}
+/* mobile */
